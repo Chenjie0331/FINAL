@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- 網頁標題欄logo -->
+    <link rel="icon" href="img/logo/CircleLogo.ico" type="image/x-icon" />
+
+    <style>
+        @import url(css/productZoom.css);
+        @import url(css/basic.css);
+        @import url(css/index.css);
+        @import url(css/productPage.css);
+    </style>
+    <!-- 圖標庫 -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- 導覽bar開始 -->
+
+
+        <!-- nav_LOGO -->
+        <nav>
+            <div class="logoPlace">
+                <a aria-current="page" target="_self" href="index.html">
+                    <div class="amine">
+                        <img class="logo" src="img/logo/logo.png" alt="首頁">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="topbar">
+                <!-- 漢堡選單List -->
+                <input type="checkbox" id="switch" />
+                <label for="switch">
+                    <div class="active">
+                        <img class="img_hamSet" src="img/icon/menu.png" alt="選單">
+                    </div>
+                </label>
+                <!-- 漢堡選單內容 -->
+                <div class="slide">
+                    <!-- 關閉選單 -->
+                    <div class="menuClose" onclick="closeMenu()">
+                        <img src="img/icon/x.png" alt="Close Menu">
+                        <span style="color: white;">close</span>
+                    </div>
+
+
+                    <ul class="menu">
+                        <!-- 版型調整 -->
+                        <div class="setting"></div>
+
+                        <!-- 選單 -->
+                        <li>
+                            <div class="large"> <!-- 動畫 -->
+                                <a href="productPage.html#ALL">
+                                    <img class="img_hamSet" src="img/icon/Shopping bag.png" alt="product"> 商品類別
+                                </a>
+                            </div>
+                        </li>
+                        <ul class="submenu">
+                            <div class="large"> <!-- 動畫 -->
+                                <li><a href="productPage.html#ALL">ALL</a></li>
+                                <li><a href="productPage.html#CAPS">CAPS</a></li>
+                                <li><a href="productPage.html#BUCKETS">BUCKETS HATS</a></li>
+                                <li><a href="productPage.html#BEANIES">BEANIES</a></li>
+                            </div>
+                        </ul>
+                        <!-- 版型調整 -->
+                        <div class="setting">
+                            <li><a href="Login.html"><img class="img_hamSet" src="img/icon/Log in.png" alt="sign in">
+                                    登入\登出</a></li>
+                            <li><a href="about.html"><img class="img_hamSet" src="img/icon/person.png" alt="about us">
+                                    關於我們</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- 搜尋 -->
+                <form role="search">
+                    <div class="search">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="mySearch" name="search" placeholder="Search...">
+                    </div>
+                </form>
+
+                <!-- 會員中心 -->
+                <a aria-current="page" target="_blank" href="memberCenter.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/User.png" alt="會員中心"><br>
+                        <span style="color: white; font-size:small; margin: left -2px;">會員中心</span>
+                    </div>
+                </a>
+
+                <!-- 購物車 -->
+                <a aria-current="page" target="_blank" href="shoppingCart.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/Shopping cart.png" alt="購物車">
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- 導覽結束 -->
+    </header>
+
+
+    <!-- 商品展示 -->
+
+    <!-- section1 -->
+    <div class="sectionContainer">
+        <section class="section-1">
+            <div class="product-image">
+                <img src="img/Cap/Baseball_cap/Baseball_cap5.jpeg" alt="Name Cap">
+            </div>
+            <div class="product-details">
+                <div class="productTitle">
+                    <h2>黑金鎖鏈（Black Gold Chain）</h2>
+                    <p>NT$ 500</p>
+                </div>
+                <!-- 數量button -->
+                <div class="quantity">
+                    <button onclick="minus()">-</button>
+                    <input id="num" type="text" value="1">
+                    <button onclick="add()">+</button>
+                </div>
+
+                <!-- 購買、加入購物車button -->
+                <div class="actions">
+                    <a href="shoppingCart.html"><input type="button" value="BUY" class="buy"></a>
+                    <input type="button" id="cart" value="ADD CART" onclick="addCart()" class="cart">
+
+                </div>
+                <a class="backPage" href="productPage.html#ALL">返回商品頁</a>
+            </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+    <!-- 商品描述 -->
+    <div class="section2Container">
+        <section class="section-2">
+            <h3>產品特徵</h3>
+            <ul>
+                <li>黑色底色搭配金色鎖鏈設計，充滿高貴質感。</li>
+                <li>可調式後扣，適合不同頭圍需求。</li>
+                <li>時尚百搭，適合日常及派對造型。</li>
+            </ul>
+        </section>
+    </div>
+    <!-- 評論區 -->
+    <section class="section-3">
+        <h3>評論區</h3>
+        <div class="comment-box">
+
+            <img src="img/icon/User.png" alt="User Icon" class="user-icon">
+            <div class="commetSetting">
+                <span class="fa fa-star-o" data-value="1"></span>
+                <span class="fa fa-star-o" data-value="2"></span>
+                <span class="fa fa-star-o" data-value="3"></span>
+                <span class="fa fa-star-o" data-value="4"></span>
+                <span class="fa fa-star-o" data-value="5"></span>
+                <form>
+                    <input type="text" name="user-comment" placeholder="YOUR COMMENT">
+                    <input type="hidden" name="rating" id="rating-value">
+                    <button type="submit"><img src="img/icon/Send.png" alt="Send"></button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="comment">
+            <img src="img/icon/User.png" alt="User Icon" class="user-icon">
+            <div class="comment-content">
+                <strong>USER1</strong> <span class="rating">★★★★★</span>
+                <p>GREAT!!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <!-- logo -->
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img class="footerImg" src="img/logo/logo.png" alt="">
+            </div>
+
+            <!-- 聯繫方式 -->
+            <div class="footerContainerContact">
+                <h3>聯繫方式</h3>
+                <div class="footerContact">
+                    <div class="contactContent">
+                        <img src="img/icon/instagram.png" alt="">
+                        <h5>TrailBlaze</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/phone.png" alt="">
+                        <h5>02-2000000</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gmail.png" alt="">
+                        <h5>TrailBlaze@gmail.com</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gps.png" alt="">
+                        <h5>桃園市中壢區中北路200號</h5>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footerEND -->
+</body>
+<!-- navJS -->
+<script src="js/nav.js"></script>
+<!-- 商品個別頁 JS-->
+<script src="js/productZoom.js"></script>
+
+
+</html>

@@ -1,0 +1,64 @@
+/* 重置設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 頁首整體設定 */
+header {
+    background: #000; /* 背景顏色 */
+    color: #fff;      /* 文字顏色 */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Header 下方的搜尋框和右側區塊 */
+.header-bottom {
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.header-bottom input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Header 右側 */
+.header-right {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+}
+
+.header-right .member {
+    margin-right: 1rem; /* 會員中心和購物車之間的距離 */
+    cursor: pointer;
+}
+
+.header-right .cart {
+    cursor: pointer;
+}
+.back-to-products {
+    text-align: center;
+    margin: 2rem 0;
+
+}
+.back-to-products a {
+    display: inline-block;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.back-to-products a:hover {
+    background: #666;
+}
+
+

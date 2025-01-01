@@ -1,0 +1,153 @@
+body {
+    background-image: url('../img/model/4.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; /* 防止背景圖重複 */
+    background-attachment: fixed; /* 讓背景圖固定，不隨頁面滾動 */
+}
+
+
+.cart-container {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 800px;
+    margin: 160px auto 60px; /* 避免與 header 和 footer 重疊 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 購物車標題 */
+.cart-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+/* 商品卡片 */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* 商品資訊 */
+.product-info {
+    color: #333;
+    flex: 1;
+}
+
+/* 商品價格 */
+.product-price {
+    color: #666;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/* 數量控制 */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 16px;
+}
+
+/* 付款方式區塊 */
+.payment-section {
+    margin: 24px 0;
+}
+
+.payment-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+/* 運送資訊區塊 */
+.shipping-section {
+    margin: 24px 0;
+}
+
+.shipping-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.shipping-address {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* 總計區塊 */
+.summary {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 結帳按鈕 */
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 24px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkout-btn:hover {
+    background: #1f2937;
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/model/3.jpg");
+    background-size: cover; /* 圖片按比例放大，覆蓋整個畫面 */
+    background-position: center; /* 圖片居中顯示 */
+    background-repeat: no-repeat; /* 禁止圖片重複 */
+}
+
+
+.login-container {
+    background-color: #fefefe;
+    margin: 300px auto; /* 上 300px，右 0，下 300px，左 100px */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-links a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+.login-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-submit:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 50px;
+}

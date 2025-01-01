@@ -1,0 +1,387 @@
+/* 本css檔為nav footer body */
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+main{
+    font-size: 100%;
+}
+/* nav */
+nav{    
+    top: -10px;
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.word{
+    color: white;
+}
+
+.topbar{
+    display: flex
+    ;
+        padding: 0px 20px 0px 25px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -15px;
+        /* align-content: center; */
+        flex-direction: row;
+    }
+    
+
+/* nav-img */
+.logoPlace {
+        margin: 0.2em auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+.logo{
+    width: 25%;
+    max-width: 400px;
+    height: auto;
+    display: inline-block;
+    padding-top:10px ;
+}
+
+
+.imgSize{
+    width: 30px;
+    display: inline-block;
+    margin: 2%;
+}
+/* .img_container::after {
+    content: "會員中心";
+    position: relative;
+    bottom: 20;
+    left: 20;
+    width: 20px;
+    height: 63px;    
+    color: white;
+    padding: 10px;
+    } */
+    .search {
+        max-width: 500px; 
+        margin: 0px auto; 
+        position: relative;
+        padding: 10px;
+    }
+    
+    .search input#mySearch {
+        width: 400px; 
+        height: 2em;
+        background: white;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        color: #333;
+        padding: 0 15px 0 45px; 
+        border-radius: 20px;
+        outline: none; 
+    }
+    
+    .search .icon {
+        position: absolute;
+        top: 50%; 
+        left: 15px;
+        transform: translateY(-50%);
+        color: #2f3031;
+        font-size: 16px;
+    }
+    
+
+/* 漢堡選單 */
+
+.imgInHam {
+    width: 100%;
+}
+
+.img_hamSet {
+    width: 32px;
+    display: inline-block;
+    margin: 2%;}
+
+/* 漢堡選單样式 */
+.slide {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    left: -300px; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: left 0.5s ease; 
+    z-index: 2;
+    backdrop-filter: blur(6px);
+}
+/* 模糊 */
+.backdrop-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    display: none; 
+    transition: opacity 0.5s ease; 
+}
+
+#switch:checked ~ .slide {
+    left: 0; 
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 隐藏 input[type="checkbox"] */
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu li {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    display: flex; 
+    align-items: center;
+    height: 65px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.menu li a img.img_hamSet {
+    margin-right: 10px; 
+    width: 20px; 
+}
+
+.menu li a:hover {
+    background: rgba(255, 255, 255, 0.253);
+}
+/* 漢堡選單關閉 */
+
+.menuClose {
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer;
+    z-index: 3; 
+}
+
+.menuClose img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+
+
+/* 子菜單 */
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+.submenu li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 45px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.submenu li a:hover {
+    
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.menu li:hover .submenu {
+    display: block; 
+}
+
+.setting{
+    margin-top: 130px;
+}
+
+
+/* footer */
+footer{
+    background-color: rgb(39, 38, 38);
+    font-size: 100%;
+    margin:0 auto;
+    padding: 20px;
+    
+    bottom: 0;
+    width: 100%;
+}
+.footerContainer{
+    position: relative;
+    display: flex;
+    gap: 0px 10px;
+    margin: 40px auto 0px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+}
+
+.footerLogo{
+    position: relative;
+    display: flex;
+    align-self: center;
+}
+.contactContent img{
+    color: white;
+}
+.footerContainerContact{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 500px;
+}
+.footerContact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+.contactContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerImg{
+    width: 12em;
+}
+
+
+/* 圖標動畫 */
+.active img{
+    transition: all 0.5s ease-in-out;
+}
+
+/* 鼠標放在圖片會旋轉 */
+.active img:hover {
+    transform: rotate(360deg); 
+}
+
+/* 點擊後縮小 */
+.active img:active {
+     transform: scale(0.4);  /*縮小60% */
+    transition: all 0.2s ease-in-out;
+}
+
+.amine img:active {
+    transform: scale(0.9);  /*縮小10% */
+    transition: all 0.2s ease-in-out;  
+}
+/* 放大 */
+.large{
+    transition: all 0.2s ease;
+}
+
+.large :hover {
+    transform: scale(1.1); 
+    transition: all 0.3s ease-in-out;
+}
+/* 選單關閉 */
+.menuClose img:hover {
+    transform: scale(1.2); 
+    transition: all 0.3s ease-in-out;
+}
+.menuClose img:active {
+    transform: rotate(180deg) scale(1.2);
+    transition: all 0.3s ease-in-out;  
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .search input#mySearch {
+        width: 80%;
+    }
+
+    .img_hamSet {
+        width: 28px;
+    }
+
+    .menu li a {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        width: 40%;
+    }
+
+    .search input#mySearch {
+        width: 60%;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .logo {
+        width: 25%;
+    }
+
+    .search input#mySearch {
+        width: 400px;
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    
+}

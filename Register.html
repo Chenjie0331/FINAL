@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TRAILBLAZE - 會員註冊</title>
+    <script src="js/Register.js"></script>
+    <style>
+        @import url(css/Register.css);
+        @import url(css/basic.css);
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- 導覽bar開始 -->
+
+
+        <!-- nav_LOGO -->
+        <nav>
+            <div class="logoPlace">
+                <a aria-current="page" target="_self" href="index.html">
+                    <div class="amine">
+                        <img class="logo" src="img/logo/logo.png" alt="首頁">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="topbar">
+                <!-- 漢堡選單List -->
+                <input type="checkbox" id="switch" />
+                <label for="switch">
+                    <div class="active">
+                        <img class="img_hamSet" src="img/icon/menu.png" alt="選單">
+                    </div>
+                </label>
+                <!-- 漢堡選單內容 -->
+                <div class="slide">
+                    <!-- 關閉選單 -->
+                    <div class="menuClose" onclick="closeMenu()">
+                        <img src="img/icon/x.png" alt="Close Menu">
+                        <span style="color: white;">close</span>
+                    </div>
+
+
+                    <ul class="menu">
+                        <!-- 版型調整 -->
+                        <div class="setting"></div>
+
+                        <!-- 選單 -->
+                        <li>
+                            <div class="large"> <!-- 動畫 -->
+                                <a href="productPage.html#ALL">
+                                    <img class="img_hamSet" src="img/icon/Shopping bag.png" alt="product"> 商品類別
+                                </a>
+                            </div>
+                        </li>
+                        <ul class="submenu">
+                            <div class="large"> <!-- 動畫 -->
+                                <li><a href="productPage.html#ALL">ALL</a></li>
+                                <li><a href="productPage.html#CAPS">CAPS</a></li>
+                                <li><a href="productPage.html#BUCKETS">BUCKETS HATS</a></li>
+                                <li><a href="productPage.html#BEANIES">BEANIES</a></li>
+                            </div>
+                        </ul>
+                        <!-- 版型調整 -->
+                        <div class="setting">
+                            <li><a href="Login.html"><img class="img_hamSet" src="img/icon/Log in.png" alt="sign in">
+                                    登入\登出</a></li>
+                            <li><a href="about.html"><img class="img_hamSet" src="img/icon/person.png" alt="about us">
+                                    關於我們</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- 搜尋 -->
+                <form role="search">
+                    <div class="search">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="mySearch" name="search" placeholder="Search...">
+                    </div>
+                </form>
+
+                <!-- 會員中心 -->
+                <a aria-current="page" target="_blank" href="memberCenter.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/User.png" alt="會員中心"><br>
+                        <span style="color: white; font-size:small; margin: left -2px;">會員中心</span>
+                    </div>
+                </a>
+
+                <!-- 購物車 -->
+                <a aria-current="page" target="_blank" href="shoppingCart.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/Shopping cart.png" alt="購物車">
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- 導覽結束 -->
+    </header>
+    <div class="register-container">
+        <h1>會員註冊</h1>
+        <form id="registerForm">
+            <!-- 使用者名稱輸入欄位 -->
+            <div class="form-group">
+                <label for="username" class="required">使用者名稱</label>
+                <input type="text" id="username" name="username" required placeholder="請輸入使用者名稱（2-20個字元）">
+                <div class="error-message" id="username-error">使用者名稱格式不正確</div> <!-- 使用者名稱格式錯誤提示 -->
+            </div>
+
+            <!-- 電子信箱輸入欄位 -->
+            <div class="form-group">
+                <label for="email" class="required">電子信箱</label>
+                <input type="email" id="email" name="email" required placeholder="請輸入有效的電子信箱">
+                <div class="error-message" id="email-error">請輸入有效的電子信箱格式</div> <!-- 電子信箱格式錯誤提示 -->
+            </div>
+
+            <!-- 密碼輸入欄位 -->
+            <div class="form-group">
+                <label for="password" class="required">密碼</label>
+                <input type="password" id="password" name="password" required placeholder="請輸入密碼（至少8個字元）">
+                <div class="error-message" id="password-error">密碼必須至少8個字元</div> <!-- 密碼長度不足提示 -->
+            </div>
+
+            <!-- 確認密碼輸入欄位 -->
+            <div class="form-group">
+                <label for="confirm-password" class="required">確認密碼</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="請再次輸入密碼">
+                <div class="error-message" id="confirm-password-error">密碼不相符</div> <!-- 密碼不一致提示 -->
+            </div>
+
+            <!-- 手機號碼輸入欄位 -->
+            <div class="form-group">
+                <label for="phone">手機號碼</label>
+                <input type="tel" id="phone" name="phone" placeholder="請輸入手機號碼">
+                <div class="error-message" id="phone-error">請輸入有效的手機號碼</div> <!-- 手機號碼格式錯誤提示 -->
+            </div>
+            <div style="display: flex;">
+                <!-- 註冊按鈕 -->
+                <a style="text-decoration: none; color: white; text-align:center; " href="Login.html"
+                    class="register-btn">
+                    確認註冊
+                </a>
+            </div>
+
+        </form>
+
+        <!-- 登入頁面連結 -->
+        <div class="login-link">
+            已有帳號？<a href="Login.html">返回登入</a> <!-- 提供登入頁面的連結 -->
+        </div>
+    </div>
+    <!-- 最底下footer -->
+    <footer>
+        <!-- logo -->
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img class="footerImg" src="img/logo/logo.png" alt="">
+            </div>
+
+            <!-- 聯繫方式 -->
+            <div class="footerContainerContact">
+                <h3>聯繫方式</h3>
+                <div class="footerContact">
+                    <div class="contactContent">
+                        <img src="img/icon/instagram.png" alt="">
+                        <h5>TrailBlaze</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/phone.png" alt="">
+                        <h5>02-2000000</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gmail.png" alt="">
+                        <h5>TrailBlaze@gmail.com</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gps.png" alt="">
+                        <h5>桃園市中壢區中北路200號</h5>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footerEND -->
+</body>
+
+</html>

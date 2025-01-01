@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <!-- 網頁標題欄logo -->
+    <link rel="icon" href="img/logo/CircleLogo.ico" type="image/x-icon" />
+    <style>
+        @import url(css/basic.css);
+        @import url(css/about.css);
+    </style>
+    <!-- 圖標庫 -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- 導覽bar開始 -->
+
+
+        <!-- nav_LOGO -->
+        <nav>
+            <div class="logoPlace">
+                <a aria-current="page" target="_self" href="index.html">
+                    <div class="amine">
+                        <img class="logo" src="img/logo/logo.png" alt="首頁">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="topbar">
+                <!-- 漢堡選單List -->
+                <input type="checkbox" id="switch" />
+                <label for="switch">
+                    <div class="active">
+                        <img class="img_hamSet" src="img/icon/menu.png" alt="選單">
+                    </div>
+                </label>
+                <!-- 漢堡選單內容 -->
+                <div class="slide">
+                    <!-- 關閉選單 -->
+                    <div class="menuClose" onclick="closeMenu()">
+                        <img src="img/icon/x.png" alt="Close Menu">
+                        <span style="color: white;">close</span>
+                    </div>
+
+
+                    <ul class="menu">
+                        <!-- 版型調整 -->
+                        <div class="setting"></div>
+
+                        <!-- 選單 -->
+                        <li>
+                            <div class="large"> <!-- 動畫 -->
+                                <a href="productPage.html#ALL">
+                                    <img class="img_hamSet" src="img/icon/Shopping bag.png" alt="product"> 商品類別
+                                </a>
+                            </div>
+                        </li>
+                        <ul class="submenu">
+                            <div class="large"> <!-- 動畫 -->
+                                <li><a href="productPage.html#ALL">ALL</a></li>
+                                <li><a href="productPage.html#CAPS">CAPS</a></li>
+                                <li><a href="productPage.html#BUCKETS">BUCKETS HATS</a></li>
+                                <li><a href="productPage.html#BEANIES">BEANIES</a></li>
+                            </div>
+                        </ul>
+                        <!-- 版型調整 -->
+                        <div class="setting">
+                            <li><a href="Login.html"><img class="img_hamSet" src="img/icon/Log in.png" alt="sign in">
+                                    登入\登出</a></li>
+                            <li><a href="about.html"><img class="img_hamSet" src="img/icon/person.png" alt="about us">
+                                    關於我們</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- 搜尋 -->
+                <form role="search">
+                    <div class="search">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="mySearch" name="search" placeholder="Search...">
+                    </div>
+                </form>
+
+                <!-- 會員中心 -->
+                <a aria-current="page" target="_blank" href="memberCenter.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/User.png" alt="會員中心"><br>
+                        <span style="color: white; font-size:small; margin: left -2px;">會員中心</span>
+                    </div>
+                </a>
+
+                <!-- 購物車 -->
+                <a aria-current="page" target="_blank" href="shoppingCart.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/Shopping cart.png" alt="購物車">
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- 導覽結束 -->
+    </header>
+
+    <main class="mainBg">
+
+        <!-- 版型調整 -->
+        <div class="setting"></div>
+        <div class="aboutSection">
+            <h1 class="aboutTtile">關於我們</h1>
+        </div>
+        <!-- 組員心得 -->
+        <div class="aboutContainer">
+
+            <section class="aboutCard">
+
+                <!-- 正面內容 -->
+                <div class='font'>
+                    <div class="fontFlex">
+                        <div class="profile_img">
+                            <img src="img/about/1.png" alt="Profile Picture">
+                        </div>
+                        <div class="iconFlex">
+                            <a class="large" href="https://www.instagram.com/jie7068/"><img
+                                    src="img/icon/instagram2.png" alt="IG"></a>
+                            <a class="large" href="https://www.facebook.com/profile.php?id=100007629728170"><img
+                                    src="img/icon/facebook.png" alt="FB"></a>
+                            <a class="large" href="mailto:a0963515@gmail.com"><img src="img/icon/gmail2.png"
+                                    alt="GMAIL"></a>
+                        </div>
+                        <p>負責項目: 登入、註冊、商品頁、購物車</p><br>
+
+                    </div>
+
+                </div>
+
+                <!-- 背面內容 -->
+                <div class='back'>
+                    <div class="profileContent">
+                        <h3>11244211陳奕杰</h3>
+                        <br>
+                        <p>
+                            這次的期末專案跟期中比起來，是我第一次跟別人一起做一個網站出來，除了彼此有明確的分工合作外，最讓我感到困難的地方就是在最後大家把各自的東西都做好之後要整合起來，因為彼此寫的習慣不同所以有很多地方需要修改，然後有些地方修改反而造成版面跑掉要重新調整，就會花費很多時間，但還好最後還是做完了，這次的經驗告訴我還是要先把基本功打磨好未來做網頁的時候才會更加輕鬆
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 組員2 -->
+            <section class="aboutCard">
+
+                <!-- 正面內容 -->
+                <div class='font'>
+                    <div class="fontFlex">
+                        <div class="profile_img">
+                            <img src="img/about/2.png" alt="Profile Picture">
+                        </div>
+                        <div class="iconFlex">
+                            <a class="large" href="https://www.instagram.com/o.o.txhui/"><img
+                                    src="img/icon/instagram2.png" alt="IG"></a>
+                            <a class="large" href="https://www.facebook.com/vevila.2024/"><img
+                                    src="img/icon/facebook.png" alt="FB"></a>
+                            <a class="large" href="mailto:s11144225@gmail.com"><img src="img/icon/gmail2.png"
+                                    alt="GMAIL"></a>
+                        </div>
+                        <p>負責項目: 首頁、footer、header、關於我們、會員中心</p>
+
+                    </div>
+
+                </div>
+
+                <!-- 背面內容 -->
+                <div class='back'>
+                    <div class="profileContent">
+                        <h3>111444225 蔡曉慧</h3>
+                        <br>
+                        <p>
+                            在撰寫期末專案時，啟發了自己對寫前端文本的興趣。看著自己一行一行寫出的程式碼，逐漸將網頁排版具象化，這個過程帶給我極大的成就感。
+                            不過在實現各種效果的過程中，我也遇到許多挑戰，一些效果無法如預期呈現出來。感謝組員們對我的包容，讓我有了試錯的空間，能夠不斷調整與改進。
+                            雖然最終的成果可能未完全符合期待，但這次經歷讓我收穫了寶貴的經驗。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- 組員3 -->
+            <section class="aboutCard">
+
+                <!-- 正面內容 -->
+                <div class='font'>
+                    <div class="fontFlex">
+                        <div class="profile_img">
+                            <img src="img/about/3.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="iconFlex">
+                            <a class="large" href="https://www.instagram.com/chen_rui_0514/"><img
+                                    src="img/icon/instagram2.png" alt="IG"></a>
+                            <a class="large" href=""><img src="img/icon/facebook.png" alt="FB"></a>
+                            <a class="large" href="mailto:z0937720022@gmail.com"><img src="img/icon/gmail2.png"
+                                    alt="GMAIL"></a>
+                        </div>
+                        <p>負責項目: 商品個別頁</p><br>
+
+                    </div>
+
+                </div>
+
+                <!-- 背面內容 -->
+                <div class='back'>
+                    <div class="profileContent">
+                        <h3>11244207許宸睿</h3>
+                        <br>
+                        <p>
+                            我覺得期末專案好難，但是我組員好強，因為我的基礎不好，導致說我的組員檢查時發現有很多問題要改(真的很抱歉TAT)，不過這次期末專案也順便我學會如何運用HTML、CSS與JavaScript設計網頁，提升一點實作能力，也增強了解決問題的技巧與創意發想。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- 最底下footer -->
+    <footer>
+        <!-- logo -->
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img class="footerImg" src="img/logo/logo.png" alt="">
+            </div>
+
+            <!-- 聯繫方式 -->
+            <div class="footerContainerContact">
+                <h3>聯繫方式</h3>
+                <div class="footerContact">
+                    <div class="contactContent">
+                        <img src="img/icon/instagram.png" alt="">
+                        <h5>TrailBlaze</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/phone.png" alt="">
+                        <h5>02-2000000</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gmail.png" alt="">
+                        <h5>TrailBlaze@gmail.com</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gps.png" alt="">
+                        <h5>桃園市中壢區中北路200號</h5>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footerEND -->
+
+
+    <!-- navJS -->
+    <!-- navJS -->
+    <script src="js/nav.js"></script>
+    <!-- 廣告JS -->
+    <script src="js/add.js"></script>
+    <!-- slogan JS -->
+    <script src="js/slogan.js"></script>
+    <!-- 商品頁 JS -->
+    <script src="js/productPage.js"></script>
+
+</body>
+
+</html>

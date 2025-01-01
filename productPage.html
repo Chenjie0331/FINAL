@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAILBLAZE - 探索街道與戶外的完美伴侶</title>
+    <!-- 網頁標題欄logo -->
+    <link rel="icon" href="img/logo/CircleLogo.png" type="image/x-icon" />
+    <style>
+        /*css引入*/
+        @import url(css/basic.css);
+        @import url(css/productPage.css);
+    </style>
+    <!-- 圖標庫 -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- 導覽bar開始 -->
+
+
+        <!-- nav_LOGO -->
+        <nav>
+            <div class="logoPlace">
+                <a aria-current="page" target="_self" href="index.html">
+                    <div class="amine">
+                        <img class="logo" src="img/logo/logo.png" alt="首頁">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="topbar">
+                <!-- 漢堡選單List -->
+                <input type="checkbox" id="switch" />
+                <label for="switch">
+                    <div class="active">
+                        <img class="img_hamSet" src="img/icon/menu.png" alt="選單">
+                    </div>
+                </label>
+                <!-- 漢堡選單內容 -->
+                <div class="slide">
+                    <!-- 關閉選單 -->
+                    <div class="menuClose" onclick="closeMenu()">
+                        <img src="img/icon/x.png" alt="Close Menu">
+                        <span style="color: white;">close</span>
+                    </div>
+
+
+                    <ul class="menu">
+                        <!-- 版型調整 -->
+                        <div class="setting"></div>
+
+                        <!-- 選單 -->
+                        <li>
+                            <div class="large"> <!-- 動畫 -->
+                                <a href="productPage.html#ALL">
+                                    <img class="img_hamSet" src="img/icon/Shopping bag.png" alt="product"> 商品類別
+                                </a>
+                            </div>
+                        </li>
+                        <ul class="submenu">
+                            <div class="large"> <!-- 動畫 -->
+                                <li><a href="#" data-category="ALL">ALL</a></li>
+                                <li><a href="#" data-category="CAPS">CAPS</a></li>
+                                <li><a href="#" data-category="BUCKETS">BUCKETS HATS</a></li>
+                                <li><a href="#" data-category="BEANIES">BEANIES</a></li>
+                            </div>
+                        </ul>
+                        <!-- 版型調整 -->
+                        <div class="setting">
+                            <li><a href="Login.html"><img class="img_hamSet" src="img/icon/Log in.png" alt="sign in">
+                                    登入\登出</a></li>
+                            <li><a href="about.html"><img class="img_hamSet" src="img/icon/person.png" alt="about us">
+                                    關於我們</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- 搜尋 -->
+                <form role="search">
+                    <div class="search">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="mySearch" name="search" placeholder="Search...">
+                    </div>
+                </form>
+
+                <!-- 會員中心 -->
+                <a aria-current="page" target="_blank" href="memberCenter.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/User.png" alt="會員中心"><br>
+                        <span style="color: white; font-size:small; margin: left -2px;">會員中心</span>
+                    </div>
+                </a>
+
+                <!-- 購物車 -->
+                <a aria-current="page" target="_blank" href="shoppingCart.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/Shopping cart.png" alt="購物車">
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- 導覽結束 -->
+        </div>
+
+
+        </nav>
+        <!-- 導覽結束 -->
+    </header>
+    <div class="setting"></div>
+    <div class="setting"></div>
+    <div class="setting"></div>
+    <div class="category-nav">
+        <ul>
+            <li><a href="#" data-category="ALL">ALL</a></li>
+            <li><a href="#" data-category="CAPS">CAPS</a></li>
+            <li><a href="#" data-category="BEANIES">BEANIES</a></li>
+            <li><a href="#" data-category="BUCKETS">BUCKETS</a></li>
+        </ul>
+    </div>
+
+    <!-- 商品列表 -->
+    <section class="product-list">
+        <!-- 棒球帽 -->
+        <div class="product-item" data-category="CAPS">
+            <a href="cap5.html">
+                <img src="img/Cap/Baseball_cap/Baseball_cap1.jpeg" alt="ALL">
+                <p>牛仔風範（Denim NY Vibe）</p>
+
+            </a>
+        </div>
+        <div class="product-item" data-category="CAPS">
+            <a href="cap4.html">
+                <img src="img/Cap/Baseball_cap/Baseball_cap2.jpeg" alt="Baseball Cap 2">
+                <p>紐約之王（King of New York）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="CAPS">
+            <a href="cap3.html">
+                <img src="img/Cap/Baseball_cap/Baseball_cap3.jpeg" alt="Baseball Cap 3">
+                <p>磚紅筆記（Brick Red Script）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="CAPS">
+            <a href="cap2.html">
+                <img src="img/Cap/Baseball_cap/Baseball_cap4.jpeg" alt="Baseball Cap 4">
+                <p>粉紅C調（Pink C Melody）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="CAPS">
+            <a href="cap1.html">
+                <img src="img/Cap/Baseball_cap/Baseball_cap5.jpeg" alt="Baseball Cap 5">
+                <p>黑金鎖鏈（Black Gold Chain）</p>
+            </a>
+        </div>
+        <!-- 針織帽 -->
+        <div class="product-item" data-category="BEANIES">
+            <a href="cap15.html">
+                <img src="img/Cap/Beanie/Beanie1.png" alt="Beanie 1">
+                <p>綠意呢喃（Green Whisper）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BEANIES">
+            <a href="cap14.html">
+                <img src="img/Cap/Beanie/Beanie2.png" alt="Beanie 2">
+                <p>暖耳毛球（Cozy Pom-pom Ears）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BEANIES">
+            <a href="cap13.html">
+                <img src="img/Cap/Beanie/Beanie3.png" alt="Beanie 3">
+                <p>純棕簡約（Pure Brown）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BEANIES">
+            <a href="cap12.html">
+                <img src="img/Cap/Beanie/Beanie4.png" alt="Beanie 4">
+                <p>金標經典（Golden LV Signature）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BEANIES">
+            <a href="cap11.html">
+                <img src="img/Cap/Beanie/Beanie5.jpg" alt="Beanie 5">
+                <p>黑笑面具（Black Smiley）</p>
+            </a>
+        </div>
+        <!-- 漁夫帽 -->
+        <div class="product-item" data-category="BUCKETS">
+            <a href="cap8.html">
+                <img src="img/Cap/Bucket_hat/Bucket_hat1.jpg" alt="Bucket Hat 1">
+                <p>純白微風（White Breeze）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BUCKETS">
+            <a href="cap9.html">
+                <img src="img/Cap/Bucket_hat/Bucket_hat2.jpg" alt="Bucket Hat 2">
+                <p>米色童趣（Sandy Strings）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BUCKETS">
+            <a href="cap10.html">
+                <img src="img/Cap/Bucket_hat/Bucket_hat3.jpg" alt="Bucket Hat 3">
+                <p>夜空漫步（Night Walker）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BUCKETS">
+            <a href="cap7.html">
+                <img src="img/Cap/Bucket_hat/Bucket_hat4.jpg" alt="Bucket Hat 4">
+                <p>黑暗風範（SHTICK Noir）</p>
+            </a>
+        </div>
+        <div class="product-item" data-category="BUCKETS">
+            <a href="cap6.html">
+                <img src="img/Cap/Bucket_hat/Bucket_hat5.jpg" alt="Bucket Hat 5">
+                <p>迷彩獵人（Camouflage Hunter）</p>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- 最底下footer -->
+    <footer>
+        <!-- logo -->
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img class="footerImg" src="img/logo/logo.png" alt="">
+            </div>
+
+            <!-- 聯繫方式 -->
+            <div class="footerContainerContact">
+                <h3>聯繫方式</h3>
+                <div class="footerContact">
+                    <div class="contactContent">
+                        <img src="img/icon/instagram.png" alt="">
+                        <h5>TrailBlaze</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/phone.png" alt="">
+                        <h5>02-2000000</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gmail.png" alt="">
+                        <h5>TrailBlaze@gmail.com</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gps.png" alt="">
+                        <h5>桃園市中壢區中北路200號</h5>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footerEND -->
+
+    <script src="js/nav.js"></script>
+    <script src="js/productPage.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/slogan.js"></script>
+</body>
+
+</html>

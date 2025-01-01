@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAILBLAZE - 購物車</title>
+    <Style>
+        @import url(css/basic.css);
+        @import url(css/shoppingCart.css);
+    </Style>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body id="shoppingCart">
+    <header>
+        <!-- 導覽bar開始 -->
+        <nav>
+            <div class="logoPlace">
+                <a aria-current="page" target="_self" href="index.html">
+                    <div class="amine">
+                        <img class="logo" src="img/logo/logo.png" alt="首頁">
+                    </div>
+                </a>
+            </div>
+
+            <div class="topbar">
+                <!-- 漢堡選單List -->
+                <input type="checkbox" id="switch" />
+                <label for="switch">
+                    <div class="active">
+                        <img class="img_hamSet" src="img/icon/menu.png" alt="選單">
+                    </div>
+                </label>
+                <!-- 漢堡選單內容 -->
+                <div class="slide">
+                    <!-- 關閉選單 -->
+                    <div class="menuClose" onclick="closeMenu()">
+                        <img src="img/icon/x.png" alt="Close Menu">
+                        <span style="color: white;">close</span>
+                    </div>
+
+                    <ul class="menu">
+                        <!-- 版型調整 -->
+                        <div class="setting"></div>
+
+                        <!-- 選單 -->
+                        <li>
+                            <div class="large"> <!-- 動畫 -->
+                                <a href="productPage.html#ALL">
+                                    <img class="img_hamSet" src="img/icon/Shopping bag.png" alt="product"> 商品類別
+                                </a>
+                            </div>
+                        </li>
+                        <ul class="submenu">
+                            <div class="large"> <!-- 動畫 -->
+                                <li><a href="productPage.html#ALL">ALL</a></li>
+                                <li><a href="productPage.html#CAPS">CAPS</a></li>
+                                <li><a href="productPage.html#BUCKETS">BUCKETS HATS</a></li>
+                                <li><a href="productPage.html#BEANIES">BEANIES</a></li>
+                            </div>
+                        </ul>
+                        <!-- 版型調整 -->
+                        <div class="setting">
+                            <li><a href="Login.html"><img class="img_hamSet" src="img/icon/Log in.png" alt="sign in">
+                                    登入\登出</a></li>
+                            <li><a href="about.html"><img class="img_hamSet" src="img/icon/person.png" alt="about us">
+                                    關於我們</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- 搜尋 -->
+                <form role="search">
+                    <div class="search">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="mySearch" name="search" placeholder="Search...">
+                    </div>
+                </form>
+
+                <!-- 會員中心 -->
+                <a aria-current="page" target="_blank" href="memberCenter.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/User.png" alt="會員中心"><br>
+                        <span style="color: white; font-size: small; margin-left: -2px;">會員中心</span>
+                    </div>
+                </a>
+
+                <!-- 購物車 -->
+                <a aria-current="page" target="_blank" href="shoppingCart.html">
+                    <div class="amine">
+                        <img class="imgSize" src="img/icon/Shopping cart.png" alt="購物車">
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- 導覽結束 -->
+    </header>
+
+    <!-- 購物車 -->
+    <div class="cart-container">
+        <h1 class="cart-title">🛒 購物車</h1>
+
+        <!-- 商品 A -->
+        <div class="product-card" id="productA">
+            <div class="product-info">
+                <!-- 刪除商品按鈕 -->
+                <button onclick="removeProduct('A')" style="float: left; margin-right: 10px; cursor: pointer;">
+                    🗑️
+                </button>
+                <div>黑笑面具（Black Smiley）</div>
+                <div class="product-price">單價：NT$ 500</div>
+            </div>
+            <!-- 數量控制 -->
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('A', -1)">-</button> <!-- 減少數量 -->
+                <input type="text" class="quantity-input" id="quantityA" value="1" readonly> <!-- 顯示當前數量 -->
+                <button class="quantity-btn" onclick="updateQuantity('A', 1)">+</button> <!-- 增加數量 -->
+                <span style="margin-left: 16px">NT$ <span id="totalA">100</span></span> <!-- 顯示商品總價 -->
+            </div>
+        </div>
+
+        <!-- 商品 B  -->
+        <div class="product-card" id="productB">
+            <div class="product-info">
+                <!-- 刪除商品按鈕 -->
+                <button onclick="removeProduct('B')" style="float: left; margin-right: 10px; cursor: pointer;">
+                    🗑️
+                </button>
+                <div>牛仔風範（Denim NY Vibe）</div>
+                <div class="product-price">單價：NT$ 300</div>
+            </div>
+            <!-- 數量控制 -->
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('B', -1)">-</button> <!-- 減少數量 -->
+                <input type="text" class="quantity-input" id="quantityB" value="1" readonly> <!-- 顯示當前數量 -->
+                <button class="quantity-btn" onclick="updateQuantity('B', 1)">+</button> <!-- 增加數量 -->
+                <span style="margin-left: 16px">NT$ <span id="totalB">200</span></span> <!-- 顯示商品總價 -->
+            </div>
+        </div>
+
+        <!-- 付款方式 -->
+        <div class="payment-section">
+            <h2 class="payment-title">💳 付款方式</h2>
+            <div class="payment-options">
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="信用卡" checked> 信用卡 <!-- 預設選擇信用卡 -->
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="貨到付款"> 貨到付款 <!-- 貨到付款選項 -->
+                </label>
+            </div>
+        </div>
+
+        <!-- 運送資訊 -->
+        <div class="shipping-section">
+            <h2 class="shipping-title">📦 運送資訊</h2>
+            <input type="text" class="shipping-address" placeholder="請輸入完整配送地址" required> <!-- 輸入配送地址 -->
+        </div>
+
+        <!-- 總計 -->
+        <div class="summary">
+            <div class="summary-row">
+                <div>商品總數：</div>
+                <div><span id="totalItems">2</span> 件</div> <!-- 顯示商品總數 -->
+            </div>
+            <div class="summary-row">
+                <div>總金額：</div>
+                <div>NT$ <span id="totalAmount">300</span></div> <!-- 顯示總金額 -->
+            </div>
+        </div>
+
+        <!-- 結帳 -->
+        <button class="checkout-btn" onclick="checkoutCart()">去結帳！</button> <!-- 點擊後觸發結帳功能 -->
+    </div>
+
+    <!-- 最底下footer -->
+    <footer>
+        <!-- logo -->
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img class="footerImg" src="img/logo/logo.png" alt="">
+            </div>
+
+            <!-- 聯繫方式 -->
+            <div class="footerContainerContact">
+                <h3>聯繫方式</h3>
+                <div class="footerContact">
+                    <div class="contactContent">
+                        <img src="img/icon/instagram.png" alt="">
+                        <h5>TrailBlaze</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/phone.png" alt="">
+                        <h5>02-2000000</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gmail.png" alt="">
+                        <h5>TrailBlaze@gmail.com</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gps.png" alt="">
+                        <h5>桃園市中壢區中北路200號</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footerEND -->
+
+    <!-- 引入 shoppingCart.js -->
+    <script src="js/shoppingCart.js"></script>
+</body>
+
+</html>

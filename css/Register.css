@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/model/3.jpg");
+    background-size: cover; /* 圖片按比例放大，覆蓋整個畫面 */
+    background-position: center; /* 圖片居中顯示 */
+    background-repeat: no-repeat; /* 禁止圖片重複 */
+    margin: 0; /* 確保沒有外部空間影響背景 */
+}
+
+.register-container {
+    flex-grow: 1; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 80%; 
+    max-width: 500px; 
+    background-color: #fefefe; 
+    border: 1px solid #888; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 150px auto; 
+    
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+
+footer {
+    background-color: rgb(39, 38, 38);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto; 
+}

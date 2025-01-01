@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <!-- 網頁標題欄logo -->
+    <link rel="icon" href="img/logo/CircleLogo.ico" type="image/x-icon" />
+    <style>
+        @import url(css/basic.css);
+        @import url(css/index.css);
+    </style>
+    <!-- 圖標庫 -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<!-- nav有一些導向網頁沒有填寫，如果是自己的部分要填喔 -->
+
+<body>
+    <main>
+        <header>
+            <!-- 導覽bar開始 -->
+
+
+            <!-- nav_LOGO -->
+            <nav>
+                <div class="logoPlace">
+                    <a aria-current="page" target="_self" href="index.html">
+                        <div class="amine">
+                            <img class="logo" src="img/logo/logo.png" alt="首頁">
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="topbar">
+                    <!-- 漢堡選單List -->
+                    <input type="checkbox" id="switch" />
+                    <label for="switch">
+                        <div class="active">
+                            <img class="img_hamSet" src="img/icon/menu.png" alt="選單">
+                        </div>
+                    </label>
+                    <!-- 漢堡選單內容 -->
+                    <div class="slide">
+                        <!-- 關閉選單 -->
+                        <div class="menuClose" onclick="closeMenu()">
+                            <img src="img/icon/x.png" alt="Close Menu">
+                            <span style="color: white;">close</span>
+                        </div>
+
+
+                        <ul class="menu">
+                            <!-- 版型調整 -->
+                            <div class="setting"></div>
+
+                            <!-- 選單 -->
+                            <li>
+                                <div class="large"> <!-- 動畫 -->
+                                    <a href="productPage.html#ALL">
+                                        <img class="img_hamSet" src="img/icon/Shopping bag.png" alt="product"> 商品類別
+                                    </a>
+                                </div>
+                            </li>
+                            <ul class="submenu">
+                                <div class="large"> <!-- 動畫 -->
+                                    <li><a href="productPage.html#ALL">ALL</a></li>
+                                    <li><a href="productPage.html#CAPS">CAPS</a></li>
+                                    <li><a href="productPage.html#BUCKETS">BUCKETS HATS</a></li>
+                                    <li><a href="productPage.html#BEANIES">BEANIES</a></li>
+                                </div>
+                            </ul>
+                            <!-- 版型調整 -->
+                            <div class="setting">
+                                <li><a href="Login.html"><img class="img_hamSet" src="img/icon/Log in.png"
+                                            alt="sign in">
+                                        登入\登出</a></li>
+                                <li><a href="about.html"><img class="img_hamSet" src="img/icon/person.png"
+                                            alt="about us"> 關於我們</a></li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <!-- 搜尋 -->
+                    <form role="search">
+                        <div class="search">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                            <input type="search" id="mySearch" name="search" placeholder="Search...">
+                        </div>
+                    </form>
+
+                    <!-- 會員中心 -->
+                    <a aria-current="page" target="_blank" href="memberCenter.html">
+                        <div class="amine">
+                            <img class="imgSize" src="img/icon/User.png" alt="會員中心"><br>
+                            <span style="color: white; font-size:small; margin: left -2px;">會員中心</span>
+                        </div>
+                    </a>
+
+                    <!-- 購物車 -->
+                    <a aria-current="page" target="_blank" href="shoppingCart.html">
+                        <div class="amine">
+                            <img class="imgSize" src="img/icon/Shopping cart.png" alt="購物車">
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <!-- 導覽結束 -->
+        </header>
+
+
+        <!-- 廣告 -->
+        <section>
+            <div class="slideshow-container">
+                <div class="imgFix">
+                    <div class="mySlides fade">
+                        <a href="productPage.html#ALL">
+                            <img src="img/add/1.jpg" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="productPage.html#BUCKETS">
+                            <img src="img/add/2.jpg" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="productPage.html#BEANIES">
+                            <img src="img/add/3.jpg" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+                <!--左右按鈕-->
+                <div class="pre" onclick="plusSlides(-1)">❮</div>
+                <div class="next" onclick="plusSlides(1)">❯ </div>
+
+                <!--顯示圓點-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+
+        </section>
+        <br>
+
+        <!-- slogan -->
+
+        <section class="sloganSpace">
+            <div class="container">
+                <h1 class="aos slideIn">TrailBlaze：點燃你的冒險精神</h1><br>
+                <p class="aos slideUp">TrailBlaze
+                    是年輕人和冒險家的必備單品。融合高品質材質和現代設計，為你打造實用且時尚的帽子。無論在城市街道上探索，還是在自然中冒險，TrailBlaze都是你最可靠的夥伴。</p>
+            </div>
+        </section>
+
+        <!-- 過渡 -->
+        <div class="PreTitle">
+            <div class="aos slideIn">
+                <img class="imgPrevent" src="img/word/prevent.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- 熱門 -->
+        <div class="hotContainer">
+            <div class="hotFlex">
+                <div class="imgTitle">
+                    <img class="Title" src="img/word/hot.png" alt="">
+                </div>
+                <a class="hotButton" href="productPage.html#ALL">go shopping ⇀</a>
+
+            </div>
+
+            <section class="hotCard">
+                <!-- top 1 -->
+                <div class="hotItem">
+                    <a href="productPage.html#BEANIES" target="_blank">
+                        <img class="imgHot" src="img/model/color3.png" alt="">
+                        <div class="hotTop">TOP 1</div>
+                    </a>
+                </div>
+                <!-- top 2 -->
+                <div class="hotItem">
+                    <a href="cap1.html" target="_blank">
+                        <img class="imgHot" src="img/model/color1.png" alt="">
+                        <div class="hotTop">TOP 2</div>
+                    </a>
+                </div>
+                <!-- top 3 -->
+                <div class="hotItem">
+                    <a href="cap3.html" target="_blank">
+                        <img class="imgHot" src="img/model/color2.png" alt="">
+                        <div class="hotTop">TOP 3</div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 最底下footer -->
+    <footer>
+        <!-- logo -->
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img class="footerImg" src="img/logo/logo.png" alt="">
+            </div>
+
+            <!-- 聯繫方式 -->
+            <div class="footerContainerContact">
+                <h3>聯繫方式</h3>
+                <div class="footerContact">
+                    <div class="contactContent">
+                        <img src="img/icon/instagram.png" alt="">
+                        <h5>TrailBlaze</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/phone.png" alt="">
+                        <h5>02-2000000</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gmail.png" alt="">
+                        <h5>TrailBlaze@gmail.com</h5>
+                    </div>
+                    <div class="contactContent">
+                        <img src="img/icon/gps.png" alt="">
+                        <h5>桃園市中壢區中北路200號</h5>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footerEND -->
+
+
+</body>
+<!-- navJS -->
+<script src="js/nav.js"></script>
+<!-- 廣告JS -->
+<script src="js/add.js"></script>
+<!-- slogan JS -->
+<script src="js/slogan.js"></script>
+
+
+</html>

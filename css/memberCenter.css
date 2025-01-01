@@ -1,0 +1,261 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+  
+}
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.product-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 40px auto;
+  overflow: visible;
+  background-color: #a4a4a45d;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 4px dotted white;
+}
+.product-box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 40px auto;
+  overflow: visible;
+  background-color: #a4a4a45d;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 4px dotted white;
+}
+.product-div1 {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow:  10px 10px rgba(235, 229, 229, 0.241);
+  background-color: #7b75756f;
+  text-align: center;
+  margin: 40px auto;
+  
+}
+.product-div1 img {
+  width: 50%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.product-div1 span {
+  display: flex;
+  margin: 5px 0;
+  font-size: 20px ;
+  color: #ffffff;
+}
+
+.product-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow:  10px 10px rgba(235, 229, 229, 0.241);
+  background-color: #7b75756f;
+  text-align: center;
+  margin: 40px auto;
+  
+}
+.product-div img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.product-div span {
+  display: flex;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.memberChoice{
+  background-color: rgba(110, 110, 110, 0.366);
+  display: flex;
+  flex-direction: rows;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 8px; 
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  
+}
+.memberChoiceButton{
+  color: rgb(8, 8, 8); 
+  text-decoration: none; 
+  font-size: 18px; 
+  padding: 10px 20px; 
+  background-color: rgba(186, 170, 170, 0.1); 
+  border-radius: 15px; 
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+
+}
+.memberChoiceButton:hover {
+  background-color: rgba(246, 235, 25, 0.956); 
+  color: rgb(37, 37, 37);
+}
+
+
+.memberContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #d6d0d06c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/model/origin3.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; /
+  margin: 0; 
+}
+
+.register-container {
+  flex-grow: 1; 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  width: 90%; 
+  max-width: 500px; 
+  height: 600px;
+  background-color: #fefefe; 
+  border: 1px solid #888; 
+  border-radius: 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin: 150px auto; 
+  gap: 20px;
+}
+
+.title h2{
+  color: black;
+  margin:20px 0px -20px 0px;
+  font-size: 2em;
+}
+h1 {
+  text-align: center;
+  margin-bottom: px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #45a049;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+

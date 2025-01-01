@@ -1,0 +1,110 @@
+/* 新加入的導覽列樣式 */
+.category-nav {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.category-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.category-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 商品列表樣式 */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 一行顯示兩個商品 */
+    gap: 20px; /* 商品之間的間距 */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto 0; /* 增加上邊距，避免被導覽列和搜索列擋住 */
+}
+
+.product-item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 350px;
+    max-height: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item p {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+
+    
+    
+
+    .logo {
+        width: 50%; /* 在小螢幕上調整 logo 大小 */
+    }
+
+    .search {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    .search input#search {
+        width: 100%; 
+    }
+
+    
+    .slide {
+        width: 30%; 
+        left: -100%; /* 隱藏選單 */
+    }
+
+    #switch:checked ~ .slide {
+        left: 0; /* 顯示選單 */
+    }
+
+    /* 商品列表調整 */
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); /* 一行顯示一個商品 */
+        margin-top: 150px; 
+    }
+
+    /* 分類按鈕調整 */
+    .category-nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
